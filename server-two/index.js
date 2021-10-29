@@ -11,6 +11,9 @@ app.use(express.static('public'));
 app.get('/',(req, res)=> {
   res.render('index')
 })
+app.get('/page2',(req, res)=> {
+  res.render('page2')
+})
 
 app.get('/hello', (req, res) => {
   res.send('Hello World');
