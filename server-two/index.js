@@ -9,10 +9,10 @@ app.set('view engine', 'pug');
 app.use(express.static('public'));
 
 app.get('/',(req, res)=> {
-  res.render('index')
+  res.render('index',{title: 'Title',pageheading:'Click on the cat'})
 })
 app.get('/page2',(req, res)=> {
-  res.render('page2')
+  res.render('page2',{title: 'Title',pageheading:'Page 2'})
 })
 
 app.get('/hello', (req, res) => {
